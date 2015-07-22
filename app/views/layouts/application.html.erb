@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BootstrapBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
   <head>
-    <title><%= yield(:title) %> | Bootstrap Blog</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag    'application', media: 'all',
                                               'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
